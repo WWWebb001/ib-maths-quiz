@@ -1,0 +1,507 @@
+[
+  {
+    "id": 1,
+    "topic": "Algebra",
+    "paper": "both",
+    "difficulty": 1,
+    "question": "Simplify: \\(3(2x - 5) - 2(x + 4)\\)",
+    "options": ["\\(4x - 23\\)", "\\(4x - 7\\)", "\\(6x - 23\\)", "\\(6x - 7\\)"],
+    "answerIndex": 0,
+    "explanation": "Expand: 6x-15 -2x-8 = 4x-23."
+  },
+  {
+    "id": 2,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Factorise fully: \\(x^2 - 9\\)",
+    "options": ["\\((x - 9)(x + 1)\\)", "\\((x - 3)(x + 3)\\)", "\\((x + 9)(x - 1)\\)", "\\((x - 3)^2\\)"],
+    "answerIndex": 1,
+    "explanation": "Difference of two squares: \\(x^2-3^2=(x-3)(x+3)\\)."
+  },
+  {
+    "id": 3,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Solve: \\(2x^2 - 7x + 3 = 0\\)",
+    "options": ["\\(x=3\\) or \\(x=\\frac12\\)", "\\(x=-3\\) or \\(x=\\frac12\\)", "\\(x=\\frac{7\\pm\\sqrt{25}}{4}\\)", "\\(x=\\frac{7\\pm5}{2}\\)"],
+    "answerIndex": 0,
+    "explanation": "Factorise: \\((2x-1)(x-3)=0\\) so \\(x=\\frac12\\) or \\(3\\)."
+  },
+  {
+    "id": 4,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Solve the inequality: \\(5 - 2x \\ge 11\\)",
+    "options": ["\\(x \\ge -3\\)", "\\(x \\le -3\\)", "\\(x \\ge 3\\)", "\\(x \\le 3\\)"],
+    "answerIndex": 1,
+    "explanation": "Subtract 5: \\(-2x\\ge6\\). Divide by -2 flips sign: \\(x\\le-3\\)."
+  },
+  {
+    "id": 5,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Solve: \\(\\frac{3}{x} = 2\\)",
+    "options": ["\\(x=\\frac{2}{3}\\)", "\\(x=\\frac{3}{2}\\)", "\\(x=-\\frac{3}{2}\\)", "\\(x=6\\)"],
+    "answerIndex": 1,
+    "explanation": "Multiply both sides by x: 3 = 2x, so x = 3/2."
+  },
+  {
+    "id": 6,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Simplify: \\(\\frac{x^2y^{-3}}{x^{-1}y^2}\\)",
+    "options": ["\\(xy^{-1}\\)", "\\(x^3y^{-5}\\)", "\\(x^3y^{-1}\\)", "\\(x^{-3}y^{5}\\)"],
+    "answerIndex": 1,
+    "explanation": "Indices: \\(x^{2-(-1)}=x^3\\), \\(y^{-3-2}=y^{-5}\\)."
+  },
+  {
+    "id": 7,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Solve: \\(\\log_{10}(x)=2.5\\)",
+    "options": ["\\(x=25\\)", "\\(x=10^{2.5}\\)", "\\(x=2.5^{10}\\)", "\\(x=10^5\\)"],
+    "answerIndex": 1,
+    "explanation": "Definition of log: \\(x=10^{2.5}\\)."
+  },
+  {
+    "id": 8,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Trap: \\(\\log(a)+\\log(b)\\) equals",
+    "options": ["\\(\\log(a+b)\\)", "\\(\\log(ab)\\)", "\\(\\log(a/b)\\)", "\\(\\log(a^b)\\)"],
+    "answerIndex": 1,
+    "explanation": "Log law: \\(\\log a + \\log b = \\log(ab)\\)."
+  },
+  {
+    "id": 9,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Arithmetic sequence: first term 5, common difference 3. Find \\(u_{10}\\).",
+    "options": ["29", "30", "32", "33"],
+    "answerIndex": 2,
+    "explanation": "u_n = 5 + (n-1)3 so u_10 = 5 + 9*3 = 32."
+  },
+  {
+    "id": 10,
+    "topic": "Algebra",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Geometric sequence: first term 8, ratio \\(\\frac12\\). Find \\(u_5\\).",
+    "options": ["1", "0.5", "2", "4"],
+    "answerIndex": 0,
+    "explanation": "u_5 = 8*(1/2)^4 = 8/16 = 1."
+  },
+
+  {
+    "id": 11,
+    "topic": "Functions",
+    "paper": "both",
+    "difficulty": 1,
+    "question": "If \\(f(x)=2x+1\\), find \\(f(3)\\).",
+    "options": ["6", "7", "8", "9"],
+    "answerIndex": 1,
+    "explanation": "f(3)=2*3+1=7."
+  },
+  {
+    "id": 12,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "If \\(f(x)=x^2-4\\), solve \\(f(x)=0\\).",
+    "options": ["\\(x=\\pm2\\)", "\\(x=2\\) only", "\\(x=-2\\) only", "\\(x=\\pm4\\)"],
+    "answerIndex": 0,
+    "explanation": "x^2-4=0 so x^2=4 gives x=±2."
+  },
+  {
+    "id": 13,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Domain trap: \\(g(x)=\\frac{1}{x-4}\\). Which value is NOT allowed?",
+    "options": ["0", "4", "-4", "1"],
+    "answerIndex": 1,
+    "explanation": "Denominator cannot be 0 so x≠4."
+  },
+  {
+    "id": 14,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Inverse function: If \\(f(x)=3x-7\\), find \\(f^{-1}(x)\\).",
+    "options": ["\\(\\frac{x-7}{3}\\)", "\\(\\frac{x+7}{3}\\)", "\\(3x+7\\)", "\\(\\frac{7-x}{3}\\)"],
+    "answerIndex": 1,
+    "explanation": "Swap x and y: x=3y-7 → 3y=x+7 → y=(x+7)/3."
+  },
+  {
+    "id": 15,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Composite function: \\(f(x)=x+2\\), \\(g(x)=x^2\\). Find \\((g\\circ f)(x)\\).",
+    "options": ["\\(x^2+2\\)", "\\((x+2)^2\\)", "\\(x^2+4\\)", "\\(x^2+2x\\)"],
+    "answerIndex": 1,
+    "explanation": "g(f(x)) = (x+2)^2."
+  },
+  {
+    "id": 16,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Transformation: \\(y=(x-3)^2\\) is the graph of \\(y=x^2\\) shifted",
+    "options": ["up 3", "down 3", "right 3", "left 3"],
+    "answerIndex": 2,
+    "explanation": "(x-3) moves the graph right 3."
+  },
+  {
+    "id": 17,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Transformation: \\(y=-\\sin(x)\\) is \\(y=\\sin(x)\\) reflected in the",
+    "options": ["x-axis", "y-axis", "line \\(y=x\\)", "origin"],
+    "answerIndex": 0,
+    "explanation": "Negative outside reflects in the x-axis."
+  },
+  {
+    "id": 18,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Intersections: Solve \\(x^2=4x\\).",
+    "options": ["\\(x=4\\)", "\\(x=0\\)", "\\(x=0\\) or \\(4\\)", "\\(x=\\pm4\\)"],
+    "answerIndex": 2,
+    "explanation": "x^2-4x=0 → x(x-4)=0 so x=0 or 4."
+  },
+  {
+    "id": 19,
+    "topic": "Functions",
+    "paper": "paper2",
+    "difficulty": 2,
+    "question": "If \\(P(t)=500(1.1)^t\\), what does 1.1 represent?",
+    "options": ["10% decrease each year", "Add 1.1 people each year", "10% increase each year", "The initial population"],
+    "answerIndex": 2,
+    "explanation": "Multiplying by 1.1 means 110% of previous value → +10% per year."
+  },
+  {
+    "id": 20,
+    "topic": "Functions",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Range: If \\(h(x)=x^2+1\\), what is the minimum value of \\(h(x)\\)?",
+    "options": ["0", "1", "-1", "No minimum"],
+    "answerIndex": 1,
+    "explanation": "x^2 ≥ 0 so x^2+1 ≥ 1."
+  },
+
+  {
+    "id": 21,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Exact value: \\(\\sin 30^\\circ\\) =",
+    "options": ["0", "\\(\\frac12\\)", "\\(\\frac{\\sqrt3}{2}\\)", "1"],
+    "answerIndex": 1,
+    "explanation": "Standard exact value."
+  },
+  {
+    "id": 22,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Exact value: \\(\\cos 60^\\circ\\) =",
+    "options": ["\\(\\frac12\\)", "\\(\\frac{\\sqrt3}{2}\\)", "1", "0"],
+    "answerIndex": 0,
+    "explanation": "Standard exact value."
+  },
+  {
+    "id": 23,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Identity: \\(\\sin^2 x + \\cos^2 x\\) =",
+    "options": ["\\(\\sin x\\cos x\\)", "0", "1", "2"],
+    "answerIndex": 2,
+    "explanation": "Pythagorean identity."
+  },
+  {
+    "id": 24,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Solve \\(\\sin x=0\\) for \\(0^\\circ \\le x \\le 360^\\circ\\).",
+    "options": ["\\(0^\\circ\\) only", "\\(180^\\circ\\) only", "\\(0^\\circ,180^\\circ,360^\\circ\\)", "\\(90^\\circ,270^\\circ\\)"],
+    "answerIndex": 2,
+    "explanation": "Sine is zero at 0°, 180°, 360°."
+  },
+  {
+    "id": 25,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Solve \\(\\cos x=1\\) for \\(0 \\le x \\le 2\\pi\\).",
+    "options": ["0 only", "\\(\\pi\\) only", "0 and \\(2\\pi\\)", "\\(\\frac\\pi2\\) and \\(\\frac{3\\pi}{2}\\)"],
+    "answerIndex": 2,
+    "explanation": "Cos is 1 at 0 and 2π."
+  },
+  {
+    "id": 26,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 3,
+    "question": "Sine rule: If \\(a=10\\), \\(A=30^\\circ\\), \\(B=45^\\circ\\), find \\(b\\).",
+    "options": ["\\(10\\cdot\\frac{\\sin45^\\circ}{\\sin30^\\circ}\\)", "\\(10\\cdot\\frac{\\sin30^\\circ}{\\sin45^\\circ}\\)", "\\(10\\sin75^\\circ\\)", "\\(10\\cos15^\\circ\\)"],
+    "answerIndex": 0,
+    "explanation": "b = a * sinB / sinA."
+  },
+  {
+    "id": 27,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Cosine rule (correct form):",
+    "options": ["\\(c^2=a^2+b^2+2ab\\cos C\\)", "\\(c^2=a^2+b^2-2ab\\cos C\\)", "\\(c=a+b-2ab\\cos C\\)", "\\(c^2=a^2-b^2-2ab\\cos C\\)"],
+    "answerIndex": 1,
+    "explanation": "Standard cosine rule uses minus."
+  },
+  {
+    "id": 28,
+    "topic": "Trigonometry",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "The period of \\(y=\\sin x\\) is",
+    "options": ["\\(\\pi\\)", "\\(2\\pi\\)", "\\(4\\pi\\)", "1"],
+    "answerIndex": 1,
+    "explanation": "Sine repeats every 2π."
+  },
+
+  {
+    "id": 29,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Gradient of line through \\((2,3)\\) and \\((6,11)\\) is",
+    "options": ["1", "2", "3", "4"],
+    "answerIndex": 1,
+    "explanation": "(11-3)/(6-2)=8/4=2."
+  },
+  {
+    "id": 30,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Midpoint of \\((4,1)\\) and \\((10,7)\\) is",
+    "options": ["\\((7,4)\\)", "\\((6,3)\\)", "\\((14,8)\\)", "\\((5,2)\\)"],
+    "answerIndex": 0,
+    "explanation": "Average x and y: ((4+10)/2, (1+7)/2)=(7,4)."
+  },
+  {
+    "id": 31,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Distance between \\((0,0)\\) and \\((3,4)\\) is",
+    "options": ["5", "7", "\\(\\sqrt7\\)", "\\(\\sqrt{25}\\)"],
+    "answerIndex": 0,
+    "explanation": "3-4-5 triangle."
+  },
+  {
+    "id": 32,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Line with gradient 3 through \\((1,2)\\) is",
+    "options": ["\\(y=3x+2\\)", "\\(y=3x-1\\)", "\\(y=3x+1\\)", "\\(y=3x-2\\)"],
+    "answerIndex": 1,
+    "explanation": "y-2=3(x-1) → y=3x-1."
+  },
+  {
+    "id": 33,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Which line is parallel to \\(y=2x-5\\)?",
+    "options": ["\\(y=-2x+1\\)", "\\(y=\\frac12x+3\\)", "\\(y=2x+7\\)", "\\(x=2\\)"],
+    "answerIndex": 2,
+    "explanation": "Parallel lines have same gradient (2)."
+  },
+  {
+    "id": 34,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Circle \\(x^2+y^2=25\\) has radius",
+    "options": ["25", "5", "\\(\\sqrt{25}\\)", "10"],
+    "answerIndex": 1,
+    "explanation": "r^2=25 so r=5."
+  },
+  {
+    "id": 35,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "If \\(\\vec v=\\begin{pmatrix}3\\\\4\\end{pmatrix}\\), then \\(|\\vec v|\\) is",
+    "options": ["7", "5", "\\(\\sqrt7\\)", "\\(\\sqrt{25}\\)"],
+    "answerIndex": 1,
+    "explanation": "Magnitude √(3^2+4^2)=5."
+  },
+  {
+    "id": 36,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "\\(\\begin{pmatrix}2\\\\-1\\end{pmatrix}+\\begin{pmatrix}5\\\\3\\end{pmatrix}=\\)",
+    "options": ["\\(\\begin{pmatrix}7\\\\2\\end{pmatrix}\\)", "\\(\\begin{pmatrix}3\\\\-4\\end{pmatrix}\\)", "\\(\\begin{pmatrix}10\\\\-3\\end{pmatrix}\\)", "\\(\\begin{pmatrix}-3\\\\4\\end{pmatrix}\\)"],
+    "answerIndex": 0,
+    "explanation": "Add components: (2+5, -1+3)=(7,2)."
+  },
+  {
+    "id": 37,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Scalar multiple: \\(3\\begin{pmatrix}-2\\\\5\\end{pmatrix}=\\)",
+    "options": ["\\(\\begin{pmatrix}-6\\\\15\\end{pmatrix}\\)", "\\(\\begin{pmatrix}-1\\\\8\\end{pmatrix}\\)", "\\(\\begin{pmatrix}-6\\\\5\\end{pmatrix}\\)", "\\(\\begin{pmatrix}6\\\\-15\\end{pmatrix}\\)"],
+    "answerIndex": 0,
+    "explanation": "Multiply each component by 3."
+  },
+  {
+    "id": 38,
+    "topic": "Geometry & Vectors",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Perpendicular gradient trap: A line perpendicular to gradient 4 has gradient",
+    "options": ["\\(\\frac14\\)", "\\(-\\frac14\\)", "-4", "4"],
+    "answerIndex": 1,
+    "explanation": "Perpendicular gradients multiply to -1."
+  },
+
+  {
+    "id": 39,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 1,
+    "question": "Mean of 2, 4, 6, 8 is",
+    "options": ["4", "5", "6", "20"],
+    "answerIndex": 1,
+    "explanation": "Sum is 20, divide by 4 → 5."
+  },
+  {
+    "id": 40,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 1,
+    "question": "Median of 3, 7, 9, 10, 12 is",
+    "options": ["7", "9", "10", "8.2"],
+    "answerIndex": 1,
+    "explanation": "Middle value is 9."
+  },
+  {
+    "id": 41,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 2,
+    "question": "Interpretation: A larger standard deviation means",
+    "options": ["Values are more tightly grouped", "Values are more spread out", "Mean is larger", "Sample size is larger"],
+    "answerIndex": 1,
+    "explanation": "Standard deviation measures spread."
+  },
+  {
+    "id": 42,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 2,
+    "question": "If events A and B are independent, then",
+    "options": ["\\(P(A\\cap B)=P(A)+P(B)\\)", "\\(P(A\\cap B)=P(A)P(B)\\)", "\\(P(A\\cup B)=P(A)P(B)\\)", "\\(P(A|B)=P(A)-P(B)\\)"],
+    "answerIndex": 1,
+    "explanation": "Independent means multiply."
+  },
+  {
+    "id": 43,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 2,
+    "question": "Conditional probability: \\(P(A|B)=\\)",
+    "options": ["\\(\\frac{P(A)}{P(B)}\\)", "\\(\\frac{P(A\\cap B)}{P(B)}\\)", "\\(\\frac{P(A\\cup B)}{P(B)}\\)", "\\(\\frac{P(B)}{P(A\\cap B)}\\)"],
+    "answerIndex": 1,
+    "explanation": "Definition of conditional probability."
+  },
+  {
+    "id": 44,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 2,
+    "question": "\\(X\\sim Bin(10,0.2)\\). Expected value \\(E(X)\\) is",
+    "options": ["0.2", "2", "8", "10"],
+    "answerIndex": 1,
+    "explanation": "E = np = 10*0.2=2."
+  },
+  {
+    "id": 45,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 3,
+    "question": "If \\(X\\sim N(50,4^2)\\), find the z-score when \\(X=58\\).",
+    "options": ["2", "1", "0.5", "-2"],
+    "answerIndex": 0,
+    "explanation": "z=(58-50)/4=2."
+  },
+  {
+    "id": 46,
+    "topic": "Statistics & Probability",
+    "paper": "paper2",
+    "difficulty": 2,
+    "question": "A strong positive correlation between ice cream sales and drowning deaths most likely means",
+    "options": ["Ice cream causes drowning", "Drowning causes ice cream sales", "A third factor affects both", "No relationship at all"],
+    "answerIndex": 2,
+    "explanation": "Correlation isn't causation - hot weather is likely the confounder."
+  },
+
+  {
+    "id": 47,
+    "topic": "Calculus",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Differentiate: \\(\\frac{d}{dx}(x^3)\\)",
+    "options": ["\\(3x^2\\)", "\\(x^2\\)", "\\(3x\\)", "\\(x^4\\)"],
+    "answerIndex": 0,
+    "explanation": "Power rule: n x^(n-1)."
+  },
+  {
+    "id": 48,
+    "topic": "Calculus",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "Differentiate: \\(\\frac{d}{dx}(5x^2-3x+7)\\)",
+    "options": ["\\(10x-3\\)", "\\(5x-3\\)", "\\(10x+3\\)", "\\(5x^2-3\\)"],
+    "answerIndex": 0,
+    "explanation": "Differentiate term-by-term: 10x - 3."
+  },
+  {
+    "id": 49,
+    "topic": "Calculus",
+    "paper": "paper1",
+    "difficulty": 2,
+    "question": "If \\(y=x^2\\), the gradient of the tangent at \\(x=4\\) is",
+    "options": ["4", "8", "16", "32"],
+    "answerIndex": 1,
+    "explanation": "dy/dx=2x so at x=4 gradient=8."
+  },
+  {
+    "id": 50,
+    "topic": "Calculus",
+    "paper": "paper1",
+    "difficulty": 1,
+    "question": "Integrate: \\(\\int 6x\\,dx\\)",
+    "options": ["\\(6x^2+C\\)", "\\(3x^2+C\\)", "\\(x^6+C\\)", "\\(6\\ln x + C\\)"],
+    "answerIndex": 1,
+    "explanation": "Integral of 6x is 3x^2 + C."
+  }
+]

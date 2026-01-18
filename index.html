@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IB Maths AA SL - Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Pretty fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- MathJax for LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)'], ['$', '$']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">∑</div>
+      <div class="brandText">
+        <div class="title">IB Maths AA SL</div>
+        <div class="subtitle">Driving-theory style revision quiz</div>
+      </div>
+    </div>
+
+    <div class="topActions">
+      <button id="btnResetStats" class="btn ghost" title="Clears all saved performance memory">Reset Stats</button>
+      <button id="btnExportStats" class="btn ghost" title="Copy your stats JSON to clipboard">Export</button>
+      <button id="btnImportStats" class="btn ghost" title="Import stats JSON from clipboard">Import</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Dashboard -->
+    <section class="card">
+      <div class="row">
+        <div>
+          <h1 class="h1">Revision Dashboard</h1>
+          <p class="muted">
+            Your progress is stored in this browser only. No logins, no fluff, just accuracy and streaks.
+          </p>
+        </div>
+
+        <div class="statsGrid">
+          <div class="miniStat">
+            <div class="miniLabel">Streak</div>
+            <div class="miniValue" id="statStreak">0</div>
+          </div>
+          <div class="miniStat">
+            <div class="miniLabel">XP</div>
+            <div class="miniValue" id="statXP">0</div>
+          </div>
+          <div class="miniStat">
+            <div class="miniLabel">Accuracy</div>
+            <div class="miniValue" id="statAccuracy">-</div>
+          </div>
+          <div class="miniStat">
+            <div class="miniLabel">Answered</div>
+            <div class="miniValue" id="statAnswered">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="controlGroup">
+          <label class="label">Mode</label>
+          <select id="modeSelect" class="select">
+            <option value="mixed" selected>Mixed (Paper 1 + Paper 2)</option>
+            <option value="paper1">Paper 1 style (exact values, no-calculator vibe)</option>
+            <option value="paper2">Paper 2 style (stats, modelling, calculator-friendly)</option>
+            <option value="reviewWrong">Review Incorrect Only</option>
+          </select>
+        </div>
+
+        <div class="controlGroup">
+          <label class="label">Topic</label>
+          <select id="topicSelect" class="select">
+            <option value="all" selected>All topics</option>
+          </select>
+        </div>
+
+        <div class="controlGroup">
+          <label class="label">Difficulty</label>
+          <select id="difficultySelect" class="select">
+            <option value="all" selected>All</option>
+            <option value="1">1 - Quick-fire</option>
+            <option value="2">2 - Standard</option>
+            <option value="3">3 - Tricky</option>
+            <option value="4">4 - Exam-style</option>
+          </select>
+        </div>
+
+        <div class="controlGroup">
+          <label class="label">Question count</label>
+          <select id="countSelect" class="select">
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+
+        <div class="controlGroup grow">
+          <label class="label">Start</label>
+          <button id="btnStart" class="btn primary">Start Quiz</button>
+        </div>
+      </div>
+
+      <div class="tipBar">
+        <div class="pill">Tip</div>
+        <div class="tipText">
+          If he keeps missing the same topic, switch to <strong>Review Incorrect Only</strong> and farm XP until it’s mastered.
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Area -->
+    <section class="card quizCard" id="quizCard" hidden>
+      <div class="quizTop">
+        <div class="progressWrap">
+          <div class="progressBar">
+            <div class="progressFill" id="progressFill"></div>
+          </div>
+          <div class="progressText">
+            <span id="qCounter">Q 1 / 10</span>
+            <span class="muted" id="qMeta">Topic • Difficulty</span>
+          </div>
+        </div>
+
+        <div class="quizActions">
+          <button class="btn ghost" id="btnSkip" title="Skip without penalty">Skip</button>
+          <button class="btn ghost" id="btnEnd" title="End quiz early">End</button>
+        </div>
+      </div>
+
+      <div class="questionBlock">
+        <div class="questionTitle" id="questionTitle">Question goes here</div>
+        <div class="questionText" id="questionText"></div>
+      </div>
+
+      <div class="optionsGrid" id="optionsGrid"></div>
+
+      <div class="feedback" id="feedback" hidden>
+        <div class="feedbackLeft">
+          <div class="resultBadge" id="resultBadge">Correct</div>
+          <div class="explain" id="explain"></div>
+        </div>
+        <div class="feedbackRight">
+          <button class="btn primary" id="btnNext">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="card" id="resultsCard" hidden>
+      <div class="row">
+        <div>
+          <h2 class="h2">Results</h2>
+          <p class="muted" id="resultsSummary"></p>
+        </div>
+
+        <div class="resultsStats">
+          <div class="resultStat">
+            <div class="miniLabel">Score</div>
+            <div class="miniValue" id="resScore">0/0</div>
+          </div>
+          <div class="resultStat">
+            <div class="miniLabel">Accuracy</div>
+            <div class="miniValue" id="resAccuracy">0%</div>
+          </div>
+          <div class="resultStat">
+            <div class="miniLabel">XP Earned</div>
+            <div class="miniValue" id="resXP">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resultsActions">
+        <button class="btn ghost" id="btnRetryWrong">Retry Incorrect</button>
+        <button class="btn primary" id="btnBackHome">Back to Dashboard</button>
+      </div>
+
+      <div class="reviewList" id="reviewList"></div>
+    </section>
+
+    <footer class="footer">
+      Built for one student. Stored locally. Brutally effective.
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
